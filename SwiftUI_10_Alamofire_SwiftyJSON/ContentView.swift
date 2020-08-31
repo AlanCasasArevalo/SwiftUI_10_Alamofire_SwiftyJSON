@@ -9,6 +9,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                NavigationLink (destination: FormView()) {
+                    Text("Login")
+                }
                 List (self.manager.usersList) { user in
                     HStack {
                         AnimatedImage(url: URL(string: user.avatar))

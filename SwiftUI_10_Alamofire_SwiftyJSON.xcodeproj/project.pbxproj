@@ -16,6 +16,8 @@
 		51FE7B9F24FD5C9F001F4740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FE7B9D24FD5C9F001F4740 /* LaunchScreen.storyboard */; };
 		51FE7BA824FD5FB6001F4740 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FE7BA724FD5FB6001F4740 /* NetworkingManager.swift */; };
 		51FE7BAB24FD6025001F4740 /* UsersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FE7BAA24FD6024001F4740 /* UsersList.swift */; };
+		51FE7BAD24FD6613001F4740 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FE7BAC24FD6613001F4740 /* FormView.swift */; };
+		51FE7BAF24FD6771001F4740 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FE7BAE24FD6771001F4740 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		51FE7BA024FD5C9F001F4740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51FE7BA724FD5FB6001F4740 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		51FE7BAA24FD6024001F4740 /* UsersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersList.swift; sourceTree = "<group>"; };
+		51FE7BAC24FD6613001F4740 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		51FE7BAE24FD6771001F4740 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		D0A84C96D1E02E4416E91A1D /* Pods-SwiftUI_10_Alamofire_SwiftyJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI_10_Alamofire_SwiftyJSON.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI_10_Alamofire_SwiftyJSON/Pods-SwiftUI_10_Alamofire_SwiftyJSON.debug.xcconfig"; sourceTree = "<group>"; };
 		D37D4436450C0F05B42ADE52 /* Pods-SwiftUI_10_Alamofire_SwiftyJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI_10_Alamofire_SwiftyJSON.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI_10_Alamofire_SwiftyJSON/Pods-SwiftUI_10_Alamofire_SwiftyJSON.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +84,7 @@
 				51FE7B9424FD5C9D001F4740 /* SceneDelegate.swift */,
 				51FE7BA624FD5F9B001F4740 /* API */,
 				51FE7B9624FD5C9D001F4740 /* ContentView.swift */,
+				51FE7BAC24FD6613001F4740 /* FormView.swift */,
 				51FE7B9824FD5C9F001F4740 /* Assets.xcassets */,
 				51FE7B9D24FD5C9F001F4740 /* LaunchScreen.storyboard */,
 				51FE7BA024FD5C9F001F4740 /* Info.plist */,
@@ -101,6 +106,7 @@
 			children = (
 				51FE7BA924FD6016001F4740 /* Entities */,
 				51FE7BA724FD5FB6001F4740 /* NetworkingManager.swift */,
+				51FE7BAE24FD6771001F4740 /* Login.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -236,6 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FE7BAF24FD6771001F4740 /* Login.swift in Sources */,
+				51FE7BAD24FD6613001F4740 /* FormView.swift in Sources */,
 				51FE7B9324FD5C9D001F4740 /* AppDelegate.swift in Sources */,
 				51FE7BA824FD5FB6001F4740 /* NetworkingManager.swift in Sources */,
 				51FE7B9524FD5C9D001F4740 /* SceneDelegate.swift in Sources */,
