@@ -1,14 +1,10 @@
-//
-//  ContentView.swift
-//  SwiftUI_10_Alamofire_SwiftyJSON
-//
-//  Created by Everis on 31/08/2020.
-//  Copyright © 2020 Alan. All rights reserved.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var manager = NetworkingManager()
+    
     var body: some View {
         Text("Hello, World!")
     }
