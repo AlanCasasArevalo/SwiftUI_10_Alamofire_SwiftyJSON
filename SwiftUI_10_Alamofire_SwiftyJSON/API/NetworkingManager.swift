@@ -6,7 +6,7 @@ import Combine
 
 class NetworkingManager: ObservableObject {
     
-    @Published var usersList = [UsersList]()
+    @Published var usersList = [UserList]()
     
     init() {
         DispatchQueue.main.async {
@@ -17,8 +17,15 @@ class NetworkingManager: ObservableObject {
                 case .success(let result):
                     let json = JSON(result)
                     for item in json["data"] {
-                        print(item.1)
+                        let id = item.1["id"].int ?? 0
+                        let first_name = item.1["first_name"].string ?? ""
+                        let last_name = item.1["last_name"].string ?? ""
+                        let email = item.1["email"].string ?? ""
+                        let avatar = item.1["avatar"].string ?? ""
+                        let user = UserList(id: id, email: email, first_name: first_name, last_name: last_name, avatar: avatar)
+                        self.usersList.append(user)
                     }
+                    print(self.usersList)
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
